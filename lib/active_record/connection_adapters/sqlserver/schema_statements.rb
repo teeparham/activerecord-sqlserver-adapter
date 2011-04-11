@@ -4,7 +4,7 @@ module ActiveRecord
       module SchemaStatements
         
         def native_database_types
-          @native_database_types ||= initialize_native_database_types.freeze
+          @native_database_types ||= initialize_native_database_types
         end
 
         def tables(name = nil)
